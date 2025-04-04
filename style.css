@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container, .navbar, .banner, .buy{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, blueviolet, #c413e3, #e22bca);
+}
+
+.card{
+    width: 350px;
+    height: 560px;
+    background-color: white;
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+.logo, .card, .container, .navbar,
+ .search, .banner, .sale, .sales, .buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1{
+    width: 250px;
+    height: 350px;
+    margin: 20px 0 25px 0;
+    padding: 7px;
+    border: 2px double blueviolet;
+}
+
+button{
+    padding: 10px 30px;
+    color: white;
+    background-color: #3d3c3c;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+button:hover{
+    background-color: white;
+    color: #3d3c3c;
+    border: 2px dashed #3d3c3c;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.search input{
+   border: none;
+   outline: none;
+   padding-left: 10px;
+}
+
+.search{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px 60px 8px 10px;
+}
+
+.image{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.image img{
+    transform: scale(0.9);
+    cursor: no-drop;
+}
+
+.sale{
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.customer h1{
+    color: blueviolet;
+}
+
+.sale h3{
+    font-size: 25px;
+ }
+
+ .sale{
+    cursor: pointer;
+ }
+
+ .sale span{
+    color: red;
+ }
+
+ .sales{
+    flex-direction: column;
+ }
+
+.navbar, .banner, .buy{
+    display: none;
+}
+
+.buy img{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 60px black;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
